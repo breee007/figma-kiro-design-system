@@ -66,6 +66,30 @@
   --checkbox-xl-radius: 5px;
   --checkbox-label-gap: 8px;
 
+  /* Modal colors, typography and spacing (Figma variables) */
+  --system-on-surface: #222222; /* Figma: System/On Surface */
+  --font-size-heading-2: 24px; /* Figma: font/size/heading-2 */
+  --font-weight-medium: 500; /* Figma: font/weight/medium */
+  --spacing-4: 32px; /* Figma: Spacing/4 (used as the title line-height) */
+
+  /* Modal backdrop: NOT in Figma. Derived from System/On Surface, no new color. */
+  --color-modal-backdrop: color-mix(in srgb, var(--system-on-surface) 50%, transparent);
+
+  /*
+   * Layout values for Modal. NOT bound to Figma variables;
+   * raw design values.
+   */
+  --modal-width: 403px;
+  --modal-radius: 14px;
+  --modal-padding-top: 29px;
+  --modal-padding-bottom: 22px;
+  --modal-padding-x: 24px;
+  --modal-section-gap: 44px;
+  --modal-content-gap: 28px;
+  --modal-header-gap: 24px;
+  --modal-actions-gap: 8px;
+  --modal-close-size: 14px;
+
   /* Text style: Typography/Button */
   --typography-button-font-family: 'BR Candor', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --typography-button-font-size: 16px;
