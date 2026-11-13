@@ -1,6 +1,5 @@
 .checkbox {
-  --checkbox-size: var(--checkbox-small-size);
-  --checkbox-radius: var(--checkbox-small-radius);
+  --checkbox-size: var(--size-checkbox-small);
 
   display: inline-flex;
   align-items: center;
@@ -20,7 +19,7 @@
   appearance: none;
   background-color: var(--color-button-tertiary-default);
   border: 1px solid var(--color-button-border);
-  border-radius: var(--checkbox-radius);
+  border-radius: var(--radius-checkbox);
   cursor: pointer;
 }
 
@@ -106,18 +105,15 @@
 
 /* Size = Small */
 .checkbox--small {
-  --checkbox-size: var(--checkbox-small-size);
-  --checkbox-radius: var(--checkbox-small-radius);
+  --checkbox-size: var(--size-checkbox-small);
 }
 
 /* Size = Large */
 .checkbox--large {
-  --checkbox-size: var(--checkbox-large-size);
-  --checkbox-radius: var(--checkbox-large-radius);
+  --checkbox-size: var(--size-checkbox-large);
 }
 
 /* Size = XL */
 .checkbox--xl {
-  --checkbox-size: var(--checkbox-xl-size);
-  --checkbox-radius: var(--checkbox-xl-radius);
+  --checkbox-size: var(--size-checkbox-xl);
 }

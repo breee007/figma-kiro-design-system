@@ -4,9 +4,9 @@
   justify-content: center;
   box-sizing: border-box;
   height: 29px;
-  padding: 0 13px;
+  padding: 0 var(--spacing-chip-padding-x);
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: var(--radius-chip);
   overflow: clip;
   white-space: nowrap;
 

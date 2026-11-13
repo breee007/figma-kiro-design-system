@@ -15,7 +15,7 @@
   line-height: var(--typography-button-line-height);
   letter-spacing: var(--typography-button-letter-spacing);
 
-  border-radius: var(--button-radius);
+  border-radius: var(--radius-button);
 }
 
 .btn:focus-visible {
@@ -60,7 +60,7 @@
 
 /* Size = Medium */
 .btn--medium {
-  height: var(--button-medium-height);
-  padding: var(--button-medium-padding-y) var(--button-medium-padding-x);
-  gap: var(--button-medium-gap);
+  height: var(--size-button-height);
+  padding: var(--spacing-button-padding-y) var(--spacing-button-padding-x);
+  gap: var(--spacing-button-gap);
 }

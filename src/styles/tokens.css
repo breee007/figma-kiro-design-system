@@ -31,39 +31,38 @@
   --font-line-height-body-2: 20px; /* Figma: font/line-height/body-2 */
   --chip-font-size: 14px; /* raw value, no Figma variable */
 
+  /* Chip layout (Figma: Layout collection) */
+  --radius-chip: 8px; /* Figma: Radius/Chip */
+  --spacing-chip-padding-x: 13px; /* Figma: Spacing/Chip/Padding X */
+
   /* Body font sizes (TextInput) */
   --font-size-body-1: 16px; /* Figma: font/size/body-1 */
   --font-size-body-2: 14px; /* Figma: font/size/body-2 */
   --font-size-body-3: 12px; /* Figma text style: Br Candor/App/Body 3 (no size variable) */
 
   /*
-   * Layout values for TextInput. NOT bound to Figma variables;
-   * raw design values, like the Button layout values.
+   * Layout values for TextInput. Entries without a Figma comment are raw design values.
    */
   --text-input-small-width: 200px;
-  --text-input-small-height: 36px;
+  --size-input-small: 36px; /* Figma: Size/Input/Small */
   --text-input-medium-width: 292px;
-  --text-input-medium-height: 40px;
+  --size-input-medium: 40px; /* Figma: Size/Input/Medium */
   --text-input-large-width: 361px;
-  --text-input-large-height: 52px;
+  --size-input-large: 52px; /* Figma: Size/Input/Large */
   --text-input-padding-x: 14px;
-  --text-input-radius: 10px;
+  --radius-input: 10px; /* Figma: Radius/Input */
   --text-input-label-left: 12px;
   --text-input-label-top: -4px;
-  --text-input-label-padding-x: 2px;
-  --text-input-helper-gap: 8px;
-  --text-input-large-helper-gap: 10px;
-
+  --spacing-input-label-padding-x: 2px; /* Figma: Spacing/Input/Label Padding X */
+  --spacing-input-caption-gap-small: 8px; /* Figma: Spacing/Input/Caption Gap/Small */
+  --spacing-input-caption-gap-large: 10px; /* Figma: Spacing/Input/Caption Gap/Large */
   /*
-   * Layout values for Checkbox. NOT bound to Figma variables;
-   * raw design values. Colors reuse the Button tokens above.
+   * Layout values for Checkbox. Colors reuse the Button tokens above.
    */
-  --checkbox-small-size: 18px;
-  --checkbox-large-size: 24px;
-  --checkbox-xl-size: 28px;
-  --checkbox-small-radius: 4px;
-  --checkbox-large-radius: 5px;
-  --checkbox-xl-radius: 5px;
+  --size-checkbox-small: 18px; /* Figma: Size/Checkbox/Small */
+  --size-checkbox-large: 24px; /* Figma: Size/Checkbox/Large */
+  --size-checkbox-xl: 28px; /* Figma: Size/Checkbox/XL */
+  --radius-checkbox: 5px; /* Figma: Radius/Checkbox */
   --checkbox-label-gap: 8px;
 
   /* Modal colors, typography and spacing (Figma variables) */
@@ -76,18 +75,17 @@
   --color-modal-backdrop: color-mix(in srgb, var(--system-on-surface) 50%, transparent);
 
   /*
-   * Layout values for Modal. NOT bound to Figma variables;
-   * raw design values.
+   * Layout values for Modal. Entries without a Figma comment are raw design values.
    */
   --modal-width: 403px;
-  --modal-radius: 14px;
-  --modal-padding-top: 29px;
-  --modal-padding-bottom: 22px;
-  --modal-padding-x: 24px;
-  --modal-section-gap: 44px;
-  --modal-content-gap: 28px;
-  --modal-header-gap: 24px;
-  --modal-actions-gap: 8px;
+  --radius-modal: 14px; /* Figma: Radius/Modal */
+  --spacing-modal-padding-top: 29px; /* Figma: Spacing/Modal/Padding Top */
+  --spacing-modal-padding-bottom: 22px; /* Figma: Spacing/Modal/Padding Bottom */
+  --spacing-modal-padding-x: 24px; /* Figma: Spacing/Modal/Padding X */
+  --spacing-modal-section-gap: 44px; /* Figma: Spacing/Modal/Section Gap */
+  --spacing-modal-content-gap: 28px; /* Figma: Spacing/Modal/Content Gap */
+  --spacing-modal-header-gap: 24px; /* Figma: Spacing/Modal/Header Gap */
+  --spacing-modal-actions-gap: 8px; /* Figma: Spacing/Modal/Actions Gap */
   --modal-close-size: 14px;
 
   /* Text style: Typography/Button */
@@ -99,11 +97,11 @@
 
   /*
    * Layout values for Button / Primary / Medium / Default.
-   * These are NOT bound to Figma variables; they are raw design values.
+   * Sourced from the Figma Layout collection.
    */
-  --button-medium-height: 36px;
-  --button-medium-padding-x: 16px;
-  --button-medium-padding-y: 12px;
-  --button-medium-gap: 8px;
-  --button-radius: 25px;
+  --size-button-height: 36px; /* Figma: Size/Button/Height */
+  --spacing-button-padding-x: 16px; /* Figma: Spacing/Button/Padding X */
+  --spacing-button-padding-y: 12px; /* Figma: Spacing/Button/Padding Y */
+  --spacing-button-gap: 8px; /* Figma: Spacing/Button/Gap */
+  --radius-button: 25px; /* Figma: Radius/Button */
 }

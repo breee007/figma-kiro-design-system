@@ -18,13 +18,13 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: var(--modal-section-gap);
+  gap: var(--spacing-modal-section-gap);
   box-sizing: border-box;
   width: var(--modal-width);
   max-width: 100%;
-  padding: var(--modal-padding-top) var(--modal-padding-x) var(--modal-padding-bottom);
+  padding: var(--spacing-modal-padding-top) var(--spacing-modal-padding-x) var(--spacing-modal-padding-bottom);
   background-color: var(--color-button-tertiary-default);
-  border-radius: var(--modal-radius);
+  border-radius: var(--radius-modal);
   color: var(--system-on-surface);
   font-family: var(--font-family-br-candor);
 }
@@ -32,14 +32,14 @@
 .modal__header {
   display: flex;
   align-items: flex-start;
-  gap: var(--modal-header-gap);
+  gap: var(--spacing-modal-header-gap);
 }
 
 .modal__content {
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: var(--modal-content-gap);
+  gap: var(--spacing-modal-content-gap);
   min-width: 0;
 }
 
@@ -80,5 +80,5 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: var(--modal-actions-gap);
+  gap: var(--spacing-modal-actions-gap);
 }
