@@ -54,6 +54,18 @@
   --text-input-helper-gap: 8px;
   --text-input-large-helper-gap: 10px;
 
+  /*
+   * Layout values for Checkbox. NOT bound to Figma variables;
+   * raw design values. Colors reuse the Button tokens above.
+   */
+  --checkbox-small-size: 18px;
+  --checkbox-large-size: 24px;
+  --checkbox-xl-size: 28px;
+  --checkbox-small-radius: 4px;
+  --checkbox-large-radius: 5px;
+  --checkbox-xl-radius: 5px;
+  --checkbox-label-gap: 8px;
+
   /* Text style: Typography/Button */
   --typography-button-font-family: 'BR Candor', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --typography-button-font-size: 16px;
