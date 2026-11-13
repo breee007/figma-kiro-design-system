@@ -1,0 +1,26 @@
+/*
+ * Design tokens sourced from Figma file gViRcCzVXjtb9cDf1r64Mk (node 1:104).
+ * Each custom property notes the Figma variable it maps to.
+ */
+:root {
+  /* Color variables */
+  --color-button-primary: #2478a2; /* Figma: Color/Button/Primary */
+  --text-inverse: #ffffff; /* Figma: Text/Inverse */
+
+  /* Text style: Typography/Button */
+  --typography-button-font-family: 'BR Candor', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --typography-button-font-size: 16px;
+  --typography-button-font-weight: 600; /* SemiBold */
+  --typography-button-line-height: 1; /* 100% */
+  --typography-button-letter-spacing: 0;
+
+  /*
+   * Layout values for Button / Primary / Medium / Default.
+   * These are NOT bound to Figma variables; they are raw design values.
+   */
+  --button-medium-height: 36px;
+  --button-medium-padding-x: 16px;
+  --button-medium-padding-y: 12px;
+  --button-medium-gap: 8px;
+  --button-radius: 25px;
+}
