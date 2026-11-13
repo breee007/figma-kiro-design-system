@@ -4,10 +4,32 @@
  */
 :root {
   /* Color variables */
-  --color-button-primary: #2478a2; /* Figma: Color/Button/Primary */
-  --color-button-secondary: #e1ebf1; /* Figma: Color/Button/Secondary */
+  --color-button-primary-default: #2478a2; /* Figma: Color/Button/Primary/Default */
+  --color-button-primary-hover: #217098; /* Figma: Color/Button/Primary/Hover */
+  --color-button-secondary-default: #e1ebf1; /* Figma: Color/Button/Secondary/Default */
+  --color-button-secondary-hover: #bbd3e0; /* Figma: Color/Button/Secondary/Hover */
+  --color-button-tertiary-default: #ffffff; /* Figma: Color/Button/Tertiary/Default */
+  --color-button-tertiary-hover: #f2f2f2; /* Figma: Color/Button/Tertiary/Hover */
+  --color-button-border: #8f9194; /* Figma: Color/Button/Border */
   --text-inverse: #ffffff; /* Figma: Text/Inverse */
   --text-button-secondary: #2478a2; /* Figma: Text/Button/Secondary */
+  --text-button-tertiary: #222222; /* Figma: Text/Button/Tertiary */
+
+  /* Chip colors (Blue and Grey chips reuse the Button tokens above) */
+  --color-chip-green: #f2f7f2; /* Figma: Color/Chip/Green */
+  --color-chip-outline-green: #478a47; /* Figma: Color/Chip/Outline/Green */
+  --color-chip-orange: #faf1e4; /* Figma: Color/Chip/Orange */
+  --color-chip-outline-orange: #e2854b; /* Figma: Color/Chip/Outline/Orange */
+  --text-chip-orange: #603e11; /* Figma: Text/Chip/Orange */
+  --color-chip-red: #f7e7e8; /* Figma: Color/Chip/Red */
+  --color-chip-outline-red: #b0161b; /* Figma: Color/Chip/Outline/Red */
+  --text-chip-red: #b0161b; /* Figma: Text/Chip/Red */
+
+  /* Chip label typography (Figma font variables) */
+  --font-family-br-candor: 'BR Candor', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; /* Figma: font/family/br candor */
+  --font-weight-regular: 400; /* Figma: font/weight/regular */
+  --font-line-height-body-2: 20px; /* Figma: font/line-height/body-2 */
+  --chip-font-size: 14px; /* raw value, no Figma variable */
 
   /* Text style: Typography/Button */
   --typography-button-font-family: 'BR Candor', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;

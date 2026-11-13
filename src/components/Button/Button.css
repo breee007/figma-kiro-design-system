@@ -19,20 +19,43 @@
 }
 
 .btn:focus-visible {
-  outline: 2px solid var(--color-button-primary);
+  outline: 2px solid var(--color-button-primary-default);
   outline-offset: 2px;
 }
 
 /* Variant = Primary */
 .btn--primary {
-  background-color: var(--color-button-primary);
+  background-color: var(--color-button-primary-default);
   color: var(--text-inverse);
+}
+
+.btn--primary:hover,
+.btn--primary.is-hover {
+  background-color: var(--color-button-primary-hover);
 }
 
 /* Variant = Secondary */
 .btn--secondary {
-  background-color: var(--color-button-secondary);
+  background-color: var(--color-button-secondary-default);
   color: var(--text-button-secondary);
+}
+
+.btn--secondary:hover,
+.btn--secondary.is-hover {
+  background-color: var(--color-button-secondary-hover);
+}
+
+/* Variant = Tertiary */
+.btn--tertiary {
+  box-sizing: border-box;
+  background-color: var(--color-button-tertiary-default);
+  color: var(--text-button-tertiary);
+  border: 1px solid var(--color-button-border);
+}
+
+.btn--tertiary:hover,
+.btn--tertiary.is-hover {
+  background-color: var(--color-button-tertiary-hover);
 }
 
 /* Size = Medium */

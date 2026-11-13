@@ -1,0 +1,52 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 29px;
+  padding: 0 13px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  overflow: clip;
+  white-space: nowrap;
+
+  font-family: var(--font-family-br-candor);
+  font-size: var(--chip-font-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-line-height-body-2);
+}
+
+/* Variant = green (label has no text variable in Figma; it matches the outline color) */
+.chip--green {
+  background-color: var(--color-chip-green);
+  border-color: var(--color-chip-outline-green);
+  color: var(--color-chip-outline-green);
+}
+
+/* Variant = orange */
+.chip--orange {
+  background-color: var(--color-chip-orange);
+  border-color: var(--color-chip-outline-orange);
+  color: var(--text-chip-orange);
+}
+
+/* Variant = red */
+.chip--red {
+  background-color: var(--color-chip-red);
+  border-color: var(--color-chip-outline-red);
+  color: var(--text-chip-red);
+}
+
+/* Variant = blue (reuses Button tokens, as in Figma) */
+.chip--blue {
+  background-color: var(--color-button-secondary-default);
+  border-color: var(--color-button-primary-default);
+  color: var(--text-button-secondary);
+}
+
+/* Variant = grey (reuses Button tokens, as in Figma) */
+.chip--grey {
+  background-color: var(--color-button-tertiary-default);
+  border-color: var(--color-button-border);
+  color: var(--text-button-tertiary);
+}
