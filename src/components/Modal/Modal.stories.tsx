@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
+import { Button } from '../Button';
 import { Modal, ModalPanel } from './Modal';
 
 const meta: Meta<typeof Modal> = {
@@ -35,4 +37,31 @@ export const AllVariants: Story = {
       ))}
     </div>
   ),
+};
+
+/** Small wrapper so the story can use state. */
+function InteractiveExample() {
+  const [open, setOpen] = useState(false);
+  const close = () => setOpen(false);
+
+  return (
+    <>
+      <Button variant="primary" onClick={() => setOpen(true)}>
+        Open modal
+      </Button>
+      <Modal
+        open={open}
+        title="Title"
+        showCloseButton
+        onClose={close}
+        onConfirm={close}
+      >
+        You will lose access to this portal if you continue.
+      </Modal>
+    </>
+  );
+}
+
+export const Interactive: Story = {
+  render: () => <InteractiveExample />,
 };
