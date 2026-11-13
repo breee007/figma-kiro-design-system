@@ -4,8 +4,8 @@ import './Button.css';
 
 export interface ButtonProps
   extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'children'> {
-  /** Figma variant axis. Only "primary" exists for now. */
-  variant?: 'primary';
+  /** Figma variant axis. */
+  variant?: 'primary' | 'secondary';
   /** Figma size axis. Only "medium" exists for now. */
   size?: 'medium';
   children: React.ReactNode;

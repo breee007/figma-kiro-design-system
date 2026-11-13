@@ -29,6 +29,12 @@
   color: var(--text-inverse);
 }
 
+/* Variant = Secondary */
+.btn--secondary {
+  background-color: var(--color-button-secondary);
+  color: var(--text-button-secondary);
+}
+
 /* Size = Medium */
 .btn--medium {
   height: var(--button-medium-height);

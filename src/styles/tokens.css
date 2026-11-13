@@ -5,7 +5,9 @@
 :root {
   /* Color variables */
   --color-button-primary: #2478a2; /* Figma: Color/Button/Primary */
+  --color-button-secondary: #e1ebf1; /* Figma: Color/Button/Secondary */
   --text-inverse: #ffffff; /* Figma: Text/Inverse */
+  --text-button-secondary: #2478a2; /* Figma: Text/Button/Secondary */
 
   /* Text style: Typography/Button */
   --typography-button-font-family: 'BR Candor', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
