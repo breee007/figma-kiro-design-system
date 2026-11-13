@@ -1,0 +1,111 @@
+.text-input {
+  display: inline-flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: var(--text-input-helper-gap);
+  font-family: var(--font-family-br-candor);
+  font-weight: var(--font-weight-regular);
+}
+
+.text-input__field {
+  position: relative;
+  display: flex;
+}
+
+.text-input__control {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0 var(--text-input-padding-x);
+  background-color: var(--color-button-tertiary-default);
+  border: 1px solid var(--color-button-border);
+  border-radius: var(--text-input-radius);
+  color: var(--text-button-tertiary);
+  font: inherit;
+  font-size: var(--font-size-body-2);
+}
+
+.text-input__control::placeholder {
+  color: var(--text-button-tertiary);
+  opacity: 1;
+}
+
+/*
+ * Focus: not in Figma. Uses the same ring as Button, with
+ * Color/Button/Primary/Default. .is-focus lets Storybook show it.
+ */
+.text-input__control:focus-visible,
+.text-input.is-focus .text-input__control {
+  outline: 2px solid var(--color-button-primary-default);
+  outline-offset: 2px;
+}
+
+/* Label sits on the top border of the field */
+.text-input__label {
+  position: absolute;
+  top: var(--text-input-label-top);
+  left: var(--text-input-label-left);
+  padding: 0 var(--text-input-label-padding-x);
+  background-color: var(--color-button-tertiary-default);
+  border-radius: var(--text-input-radius);
+  color: var(--text-button-tertiary);
+  font-size: var(--font-size-body-3);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.text-input__helper {
+  margin: 0;
+  color: var(--text-button-tertiary);
+  font-size: var(--font-size-body-3);
+}
+
+/* Error / Error Blank */
+.text-input--error .text-input__control {
+  border-color: var(--color-chip-outline-red);
+}
+
+.text-input--error .text-input__label,
+.text-input--error .text-input__helper {
+  color: var(--text-chip-red);
+}
+
+/* Disabled (native attribute) */
+.text-input__control:disabled {
+  background-color: var(--color-button-tertiary-hover);
+  cursor: not-allowed;
+}
+
+/* Size = Small */
+.text-input--small {
+  width: var(--text-input-small-width);
+}
+
+.text-input--small .text-input__control {
+  height: var(--text-input-small-height);
+}
+
+/* Size = Medium */
+.text-input--medium {
+  width: var(--text-input-medium-width);
+}
+
+.text-input--medium .text-input__control {
+  height: var(--text-input-medium-height);
+}
+
+/* Size = Large */
+.text-input--large {
+  width: var(--text-input-large-width);
+  gap: var(--text-input-large-helper-gap);
+}
+
+.text-input--large .text-input__control {
+  height: var(--text-input-large-height);
+  font-size: var(--font-size-body-1);
+}
+
+.text-input--large .text-input__label,
+.text-input--large .text-input__helper {
+  font-size: var(--font-size-body-2);
+}

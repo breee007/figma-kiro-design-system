@@ -31,6 +31,29 @@
   --font-line-height-body-2: 20px; /* Figma: font/line-height/body-2 */
   --chip-font-size: 14px; /* raw value, no Figma variable */
 
+  /* Body font sizes (TextInput) */
+  --font-size-body-1: 16px; /* Figma: font/size/body-1 */
+  --font-size-body-2: 14px; /* Figma: font/size/body-2 */
+  --font-size-body-3: 12px; /* Figma text style: Br Candor/App/Body 3 (no size variable) */
+
+  /*
+   * Layout values for TextInput. NOT bound to Figma variables;
+   * raw design values, like the Button layout values.
+   */
+  --text-input-small-width: 200px;
+  --text-input-small-height: 36px;
+  --text-input-medium-width: 292px;
+  --text-input-medium-height: 40px;
+  --text-input-large-width: 361px;
+  --text-input-large-height: 52px;
+  --text-input-padding-x: 14px;
+  --text-input-radius: 10px;
+  --text-input-label-left: 12px;
+  --text-input-label-top: -4px;
+  --text-input-label-padding-x: 2px;
+  --text-input-helper-gap: 8px;
+  --text-input-large-helper-gap: 10px;
+
   /* Text style: Typography/Button */
   --typography-button-font-family: 'BR Candor', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --typography-button-font-size: 16px;
